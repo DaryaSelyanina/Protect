@@ -1,0 +1,108 @@
+.products {
+    width: 1036px;
+    margin: 0 auto; 
+}
+
+.products h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #2D303C;
+    position: relative;
+    z-index: 10;
+    font-family: "MontserratRegular";
+}
+
+.products h2::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 37px;
+    background-image: url("../img/Vector-triangle.svg");
+    left: -8px;
+    top: -19px;
+    position: absolute;
+    z-index: -1;
+    margin-bottom: 30px;
+}
+
+.products-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.products-item-first {
+    width: 332px;
+    height: 303px;
+    background-color: #252D4D;
+    background-image: url("../img/Mask GroupProduct.png");
+    position: relative;
+}
+
+.products-item-first img {
+    width: 100%;
+    height: 100%;
+}
+
+.products-item-first p {
+    font-size: 24px;
+    position: absolute;
+    color: #ffffff;
+    font-weight: bold;
+    top: 28px;
+    left: 24px;
+}
+
+.products-item-first__button {
+    width: 45px;
+    height: 35px;
+    background-color: #0081F5;
+    border-radius: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    border: none;
+}
+
+.products-item-first__button img {
+    width: 17px;
+    height: 12px;
+}
+ 
+.products-item {
+    width: 214px;
+    height: 303px;
+    position: relative;
+    border: 2px solid #F2F2F2;
+}
+
+.products-item--active {
+    border: 2px solid #0081F5;
+}
+
+.products-item--active::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 15px;
+    right: 15px;
+    width: 17px;
+    height: 12px;
+    background-image: url("../img/Стрелка синяя.svg");
+}
+
+.products-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.products-item__text {
+    color: #252D4D;
+    font-size: 14px;
+    text-align: center;
+    width: 140px;
+    position: absolute;
+    bottom: 20px;
+    transform: translateX(-50%);
+    left: 50%;
+}

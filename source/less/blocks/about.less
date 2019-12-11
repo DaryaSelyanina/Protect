@@ -1,0 +1,49 @@
+.about {
+    width: 1036px;
+    margin: 100px auto;
+    display: flex;
+}
+
+.about-item {
+    width: 150px;
+    margin-right: 130px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-item::before {
+    content: "";
+    background-image: url("../img/Vector-border.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 79px;
+    height: 79px;
+}
+
+.about-item__data {
+    font-size: 50px;
+    font-family: "MontserratRegular";
+    text-align: left;
+    display: flex;
+    align-items: baseline;
+    line-height: 45px;
+    background-color: #ffffff;
+    z-index: 10;
+    margin-left: 30px;
+    margin-top: 13px;
+    height: 40px;
+}
+
+.about-item__data-metric {
+    font-size: 26px;
+}
+
+.about-item__text {
+    color: #89898A;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 36px;
+    line-height: 17px;
+}
